@@ -124,11 +124,12 @@ results/
 ```
 ### Metrics Captured
 Metric	Description
+```bash
 Return [%]	Total percentage return
 Sharpe Ratio	Risk-adjusted return
 Max. Drawdown [%]	Largest peak-to-trough decline
 Win Rate [%]	Percentage of winning trades
-
+```
 ## Contact
 Author: Wahidur Rahman
 Email: sm.wahidur@gm.gist.ac.kr
