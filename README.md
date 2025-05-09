@@ -131,7 +131,9 @@ Max. Drawdown [%]	Largest peak-to-trough decline
 Win Rate [%]	Percentage of winning trades
 ```
 ## Contact
+```bash
 Author: Wahidur Rahman
 Email: sm.wahidur@gm.gist.ac.kr
 GitHub: @wahidur028
 Project Link: https://github.com/wahidur028/cryptotrade
+```
