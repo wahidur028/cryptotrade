@@ -36,8 +36,6 @@ cryptotrade/
 ├── results/                  # Backtest outputs
 │   ├── metrics/              # Detailed metrics
 │   └── optimized/            # Optimization results
-├── data/                     # Cached market data
-├── tests/                    # Unit tests
 ├── .gitignore                # Version control exclusions
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project documentation
