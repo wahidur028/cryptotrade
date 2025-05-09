@@ -127,8 +127,6 @@ Return [%]	Total percentage return
 Sharpe Ratio	Risk-adjusted return
 Max. Drawdown [%]	Largest peak-to-trough decline
 Win Rate [%]	Percentage of winning trades
-# Trades	Total number of trades executed
-Exposure Time [%]	Percentage of time in market
 
 ## Contact
 Author: Wahidur Rahman
