@@ -1,0 +1,6 @@
+pandas
+pandas_ta
+yfinance
+backtesting
+matplotlib
+openbb
