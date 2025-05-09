@@ -2,15 +2,20 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Strategy Details](#strategy-details)
-- [Results Analysis](#results-analysis)
 - [Project Structure](#project-structure)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
+- [Features](#features)
+    - [Core Functionality](#core-functionality)
+    - [Performance Metrics](#performance-metrics)
+    - [Data Handling](#data-handling)
+- [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+- [Usage](#usage)
+    - [Basic Execution](#basic-execution)
+    - [Configuration Options](#configuration-options)
+- [Results Analysis](#results-analysis)
+    - [Output Files](#output-files)
+    - [Metrics Captured](#metrics-captured)
 - [Contact](#contact)
 
 ## Project Overview
@@ -19,6 +24,22 @@ A comprehensive backtesting framework for evaluating cryptocurrency trading stra
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Backtesting](https://img.shields.io/badge/backtesting.py-0.3.3-orange)
+
+## Project Structure
+cryptotrade/
+├── strategies/               # Strategy implementations
+│   ├── strategy_sma.py
+│   ├── strategy_macd.py
+│   ├── strategy_buyandhold.py
+│   └── strategy_randomwalk.py
+├── results/                  # Backtest outputs
+│   ├── metrics/              # Detailed metrics
+│   └── optimized/            # Optimization results
+├── data/                     # Cached market data
+├── tests/                    # Unit tests
+├── .gitignore                # Version control exclusions
+├── requirements.txt          # Python dependencies
+└── README.md                 # Project documentation
 
 ## Features
 ### Core Functionality
@@ -92,3 +113,25 @@ START_DATE = '2021-01-01' # Backtest start
 END_DATE = '2024-01-01'   # Backtest end
 INTERVAL = '1d'           # Timeframe ('1d', '4h', '1h')
 ```
+
+## Results Analysis
+### Output Files
+results/
+├── [Strategy]_[Iterations]runs_metrics_[timestamp].csv
+├── [Strategy]_[Iterations]runs_summary_[timestamp].csv
+├── [Strategy]_optimized_[params]_[timestamp].csv
+
+### Metrics Captured
+Metric	Description
+Return [%]	Total percentage return
+Sharpe Ratio	Risk-adjusted return
+Max. Drawdown [%]	Largest peak-to-trough decline
+Win Rate [%]	Percentage of winning trades
+# Trades	Total number of trades executed
+Exposure Time [%]	Percentage of time in market
+
+## Contact
+Author: Wahidur Rahman
+Email: sm.wahidur@gm.gist.ac.kr
+GitHub: @wahidur028
+Project Link: https://github.com/wahidur028/cryptotrade
