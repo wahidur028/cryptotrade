@@ -26,6 +26,7 @@ A comprehensive backtesting framework for evaluating cryptocurrency trading stra
 ![Backtesting](https://img.shields.io/badge/backtesting.py-0.3.3-orange)
 
 ## Project Structure
+```bash
 cryptotrade/
 ├── strategies/               # Strategy implementations
 │   ├── strategy_sma.py
@@ -35,11 +36,10 @@ cryptotrade/
 ├── results/                  # Backtest outputs
 │   ├── metrics/              # Detailed metrics
 │   └── optimized/            # Optimization results
-├── data/                     # Cached market data
-├── tests/                    # Unit tests
 ├── .gitignore                # Version control exclusions
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project documentation
+```
 
 ## Features
 ### Core Functionality
@@ -116,20 +116,26 @@ INTERVAL = '1d'           # Timeframe ('1d', '4h', '1h')
 
 ## Results Analysis
 ### Output Files
+```bash
 results/
 ├── [Strategy]_[Iterations]runs_metrics_[timestamp].csv
 ├── [Strategy]_[Iterations]runs_summary_[timestamp].csv
 ├── [Strategy]_optimized_[params]_[timestamp].csv
-
+```
 ### Metrics Captured
 Metric	Description
+```bash
 Return [%]	Total percentage return
 Sharpe Ratio	Risk-adjusted return
 Max. Drawdown [%]	Largest peak-to-trough decline
 Win Rate [%]	Percentage of winning trades
+# Trades	Total number of trades executed
+Exposure Time [%]	Percentage of time in market
 
 ## Contact
+```bash
 Author: Wahidur Rahman
 Email: sm.wahidur@gm.gist.ac.kr
 GitHub: @wahidur028
 Project Link: https://github.com/wahidur028/cryptotrade
+```
