@@ -28,17 +28,26 @@ A comprehensive backtesting framework for evaluating cryptocurrency trading stra
 ## Project Structure
 ```bash
 cryptotrade/
-├── strategies/               # Strategy implementations
-│   ├── strategy_sma.py
-│   ├── strategy_macd.py
+│
+├── strategy/                         # Strategy implementations
+│   ├── results/                     # Backtest results, metrics, summaries
+│   │   ├── SmaCross_10runs_metrics_20250510_0007.csv
+│   │   ├── SmaCross_10runs_summary_20250510_0007.csv
+│   ├── SmaCrossStrategy.html
 │   ├── strategy_buyandhold.py
-│   └── strategy_randomwalk.py
-├── results/                  # Backtest outputs
-│   ├── metrics/              # Detailed metrics
-│   └── optimized/            # Optimization results
-├── .gitignore                # Version control exclusions
-├── requirements.txt          # Python dependencies
-└── README.md                 # Project documentation
+│   ├── strategy_macd.py
+│   ├── strategy_randomwalk.py
+│   └── strategy_sma.py
+│
+├── utils/                            # Utility modules
+│   └── technicals.py                 # Contains CryptoDataProcessor class
+│
+├── cryptotrade/processed_data/      # Saved processed datasets
+│   └── CryptoDataProcessor_BTC_USD_2021-01-01_to_2024-01-01.csv
+│
+├── .gitignore
+├── README.md
+├── requirements.txt
 ```
 
 ## Features
